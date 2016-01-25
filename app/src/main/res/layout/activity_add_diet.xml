@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity.AddDiet">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnDietTypeList"></Spinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Menu"
+        android:gravity="center"
+        android:id="@+id/etxtMenu"
+        android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate"
+            android:text="Pick Date"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_purple"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTime"
+            android:text="Pick Time"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_purple"
+            android:gravity="center"
+            android:drawableRight="@android:drawable/ic_lock_idle_alarm"
+            android:textColor="#FFFFFF"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily alarm"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:id="@+id/chkDailyAlarm"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:id="@+id/chkReminder"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="btnSaveOnClick"/>
+
+
+
+
+
+</LinearLayout>
